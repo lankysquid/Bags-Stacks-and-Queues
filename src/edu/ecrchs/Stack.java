@@ -8,6 +8,11 @@ public class Stack<Item> implements Iterable<Item>{
     private Node<Item> first;
     private int num;
 
+    public Stack() {
+        first = null;
+        num = 0;
+    }
+
     private class Node<Item> {
         private Node<Item> next;
         private Item item;
